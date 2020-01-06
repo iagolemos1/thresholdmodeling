@@ -147,7 +147,7 @@ The results should be:
 
 **Fig. 7:** Comulative distribution function with the empirical points and the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
 
-![](result_retlev.png)
+![](result_retlvl.png)
 
 
 **Fig. 8:** Return level plot with the empirical estimatives of the return level and the confidence bands based on the Delta Method.
