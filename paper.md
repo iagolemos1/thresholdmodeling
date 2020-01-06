@@ -45,10 +45,9 @@ In this context, this package provides a complete toolkit to conduct a threshold
 Into a software context, it is possible to see a strong community working with ``R`` packages like ``POT`` [@POT],``evd`` [@evd] and ``extRemes`` [@extremes], which ones provides a complete extreme value modeling. 
 Otherwise, in ``Python``, it is possible to find the ``scikit-extremes`` [@kiko], which one does not contemple the threshold models yet. In addition, another package is ``scipy``, with the ``genpareto`` [@scipy] functions,which also does not provide excesses modeling functions. Moreover, this package brings to the community a possibility to conduct a extreme value analysis using a strong, consolidated and high-level programming language given the importance of this approach in corrosion engineering [@scarf] and [@tan], hydrology [@katz], enviromental data [@max] and [@esther] and many other fields of natural sciences and engineering. 
 
-Hence, the ``thresholdmodeling`` package presents numerous functions to model the stochastic behavior of a extreme process. For a complete introduction of the complete fifteen package functions it is crucial to go to the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling). Some features in the package are shown below. 
+Hence, the ``thresholdmodeling`` package presents numerous functions to model the stochastic behavior of a extreme process. For a complete introduction of the complete fifteen package functions it is crucial to go to the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling). 
 
 ## Threshold Selection
-
 * **Mean Residual Life Plot** : It is possible to plot the Mean Residual Life function, as it is defined in [@coles];
 * **Parameter Stability Plot** : Also, it is possible to get the two graphics related to the shape and the modified scale parameters stability plot, as they are defined in [@coles].
 
@@ -57,19 +56,15 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 
 ## Model Checking
 * **Probability Density Function, Comulative Distribution Function, Quantile-Quantile and Probability-Probability Plots** : Plots the theoretical probability density function with the normalized empirical histograms for a given dataset, using some bin methods (see [``gpdpdf``](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit)), the heoretical and empirical CDF with the Dvoretzky–Kiefer–Wolfowitz confidence bands and the QQ and PP plots, comparing the sample and the theoretical values. The first one uses the Kolmogorov-Smirnov Two Sample test for getting the confidence bands while the second one uses the Dvoretzky–Kiefer–Wolfowitz method.
-
 * **L-Moments Plots** : L-Skewness against L-Kurtosis plot for a given threshold values using the Generalized Pareto parametrization. As warning, L-Moments plots are really difficult to interpret. See [@POT] and [@hosking] for more details.
 
 ## Model Diagnostics and Return Level Analysis
-
 * **Return Level Computation and Plot** : Computing a return value for a given return period is also possible, with a confidence interval obtained by the Delta Method [@coles]. Furthermore, a return level plot is provided,using the Delta Method in order to obtain the confidence bands. In order to compare, the empirical return level plot is provided. 
 
 ## Data Analysis 
-
 * **Declustering and Data Visualization** : It is possible to visualize the data during the unit of a return period. Also, for a giving empirical rule (number of days, for example), it is possible to cluster the dataset and, taking the maximum observation of each cluster, a declustering of maximuns is done. 
 
 ## Further Functions
-
 It is also possible to compute sample L-Moments, model L-Moments, non-central moments, differential entropy and the survival function plot. 
 
 # Installation 
@@ -97,7 +92,7 @@ In the repository on [GitHub page](https://github.com/iagolemos1/thresholdmodeli
 to get the dataset: Daily Rainfall in the South-West of England from 1914 to 1962. 
 Using it is a way of confronting the software in order to verify its results and compare it with the forseen ones in [@coles]. For a more detailed tutorial of the using of each function, go to the [Test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) folder.
 
-A fast tutorial on how to use the software and get the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md)
+A fast tutorial on how to use the software and get the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md).
 
 ```python
 from thresholdmodeling import thresh_modeling 
