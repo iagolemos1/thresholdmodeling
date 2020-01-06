@@ -53,16 +53,12 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 * **Parameter Stability Plot** : Also, it is possible to get the two graphics related to the shape and the modified scale parameters stability plot, as they are defined in [@coles].
 
 ## Model Fit
-* **Fit the GPD Model** : Fitting a given dataset to a GPD model using the following methods: maximum likelihood, maximum penalized likelihood, moments, unbiased probability weighted moments, biased probability weigthed moments, minimum density power divergence, medians, Pickands’ likelihood moment and maximum goodness-of-fit estimators. This function uses the ``POT``[@POT] ``R`` package to compute and show the GPD estimatives.
+* **Fit the GPD Model** : Fitting a given dataset to a GPD model using some methods (see [**Model Fit**](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit))
 
 ## Model Checking
-* **Probability Density Function** : Plots the theoretical probability density function with the normalized empirical histograms for a given dataset, using the following bin methods: Sturges, Doane, Scott, Freedman-Diaconis Estimator, Stone, Rice or Squared. 
+* **Probability Density Function, Comulative Distribution Function, Quantile-Quantile and Probability-Probability Plots** : Plots the theoretical probability density function with the normalized empirical histograms for a given dataset, using some bin methods (see [``gpdpdf``](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit), the heoretical and empirical CDF with the Dvoretzky–Kiefer–Wolfowitz confidence bands and the QQ and PP plots, comparing the sample and the theoretical values. The first one uses the Kolmogorov-Smirnov Two Sample test for getting the confidence bands while the second one uses the Dvoretzky–Kiefer–Wolfowitz method.
 
-* **Comulative Distribution Function** : Plots the theoretical and empirical CDF with the Dvoretzky–Kiefer–Wolfowitz confidence bands.
-
-* **Quantile-Quantile and Probability-Probability Plots** : Get QQ and PP plots, comparing the sample and the theoretical values. The first one uses the Kolmogorov-Smirnov Two Sample test for getting the confidence bands while the second one uses the Dvoretzky–Kiefer–Wolfowitz method. 
-
-* **L-Moments Plots** : Get the L-Moments L-Skewness against L-Kurtosis plot for a given threshold values using the Generalized Pareto parametrization. As warning, L-Moments plots are really difficult to interpret. See [@POT] and [@hosking] for more details.
+* **L-Moments Plots** : L-Skewness against L-Kurtosis plot for a given threshold values using the Generalized Pareto parametrization. As warning, L-Moments plots are really difficult to interpret. See [@POT] and [@hosking] for more details.
 
 ## Model Diagnostics and Return Level Analysis
 
@@ -99,33 +95,25 @@ utils.install_packages('POT') #installing POT package
 
 In the repository on [GitHub page](https://github.com/iagolemos1/thresholdmodeling) is possible
 to get the dataset: Daily Rainfall in the South-West of England from 1914 to 1962. 
-Using this dataset is a way of confronting the software in order to verify its results and compare it with the forseen ones in [@coles]. For a more detailed tutorial of the using of each function, go to the [Test folder](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py).
+Using it is a way of confronting the software in order to verify its results and compare it with the forseen ones in [@coles]. For a more detailed tutorial of the using of each function, go to the [Test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) folder.
 
-A fast tutorial on how to use the software and get the results presented by [@coles] is given below.   
+A fast tutorial on how to use the software and get the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md)
 
 ```python
-from thresholdmodeling import thresh_modeling #importing package
-import pandas as pd #importing pandas
+from thresholdmodeling import thresh_modeling 
+import pandas as pd 
 
-url = 'https://raw.githubusercontent.com/iagolemos1/thresholdmodeling/master/dataset/rain.csv'#saving url
-df = pd.read_csv(url, error_bad_lines=False) #reading the data from url
-data = df.values #turning data into a numpy array
+url = 'https://raw.githubusercontent.com/iagolemos1/thresholdmodeling/master/dataset/rain.csv'
+df = pd.read_csv(url, error_bad_lines=False) 
+data = df.values 
 
-thresh_modeling.MRL(data, 0.05) #(sample array, confidence level)
-thresh_modeling.Parameter_Stability_plot(data, 0.05) #(sample array, 
-#confidence level)
-thresh_modeling.gpdpdf(data, 30, 'mle', 'sturges', 0.05) #(sample array, 
-#threshold, fit method, confidence level)
-thresh_modeling.qqplot(data, 30, 'mle', 0.05) #(sample array, threshold, 
-#fit method, confidence level)
-thresh_modeling.ppplot(data, 30, 'mle', 0.05) #(sample array, threshold, 
-#fit method, confidence level)
-thresh_modeling.gpdcdf(data, 30, 'mle', 0.05) #(sample array, threshold,
-#fit method, confidence level)
-thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle') #(sample aray, 
-#threshold, confidence level, block size (daily observations, in other words, 
-#annual blocks), return period (100 years) to compute the return level, 
-# fit method.)
+thresh_modeling.MRL(data, 0.05) 
+thresh_modeling.Parameter_Stability_plot(data, 0.05) 
+thresh_modeling.gpdpdf(data, 30, 'mle', 'sturges', 0.05) 
+thresh_modeling.qqplot(data, 30, 'mle', 0.05) 
+thresh_modeling.ppplot(data, 30, 'mle', 0.05) 
+thresh_modeling.gpdcdf(data, 30, 'mle', 0.05) 
+thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle') 
 ```
 The results should be: 
 
@@ -173,7 +161,7 @@ For more details, the documentation is up-to-date on the [GitHub page](https://g
 
 # Acknowledgements
 
-I acknowledge contributions from my professor Antônio Marcos Gonçalves Lima and Fabiana Dias Fonseca Martins, and the support from whole Acoustics and Vibrations Laboratory team.
+The authors would like to thanks the School of Mechanical Engineering at Federal University of Uberlândia and CNPq and CAPES for the financial support to this research.
 
 # References
 
