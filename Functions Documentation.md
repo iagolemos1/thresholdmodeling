@@ -22,6 +22,9 @@ This file presents a documentation of the functions presented in the ``threshold
 
 * **``lmomplot(sample, threshold)``**  : This function returns the L-Skewness against L-Kurtosis plot using the Generalized Pareto normalization. ``Sample`` is a 1-D array of the observations, ``threshold`` is the chosen threshold. **Warning**: This plot is very difficult to interpret. 
 
+## Model Diagnostics and Return Level Analysis
+* **``return_value(sample, threshold, alpha, block_size, return_period, fit_method)``** : This function returns the return level for the given argument ``return_period`` with confidence interval based on the Delta Method. Also, it will draw the return level plot based on the block size (usualy annual) with confidence bands based on the Delta Method and empirical points. ``Sample`` is a 1-D array of the observations, ``threshold`` is the chosen threshold, ``alpha`` is the confidence level, 'block_size' is represents the number of observations will be a block, for example, if the interest is to conduct an annual analysis, the ``block_size`` should be represent a year, in other words, if the data is daily, ``block_size`` should be 365, ``return_period`` is the exact return period you want to compute the return level and ``fit_mehotd``  is one of the following fit methods (string format): 'mle', 'mple', 'moments', 'pwmu', 'pwmb', 'mdpd', 'med', 'pickands', 'lme' and 'mgf' (for more information see **Model Fit**).
+
 
 
 
