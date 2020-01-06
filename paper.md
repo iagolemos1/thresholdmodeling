@@ -1,5 +1,5 @@
 ---
-title: 'threshmodelsPackage: A Python package for a Peak-Over-Threshold modeling'
+title: 'thresholdmodeling: A Python package for modeling excesses over a threshold using the Peak-Over-Threshold Method and the Generalized Pareto Distribution'
 tags:
   - Python
   - Threshold Models
@@ -12,8 +12,12 @@ authors:
     affiliation: "1, 2, 3"
     
   - name: Antônio Marcos Gonçalves Lima
-    orcid: Author Without ORCID
+    orcid: 0000-0003-0170-6083
     affiliation: "4, 5, 6"
+    
+  - name: Marcus Antônio Viana Duarte
+    orcid: 0000-0002-8166-5666
+    affiliation: "7, 8, 9, 10"
 affiliations:
  - name: Acoustics and Vibration Laboratory
    index: 1
@@ -27,7 +31,15 @@ affiliations:
    index: 5
  - name: Federal University of Uberlândia
    index: 6
-date: 04 December 2019
+ - name: Professor
+   index: 7
+ - name: Acoustics and Vibration Laboratory
+   index: 8
+ - name: School of Mechanical Engineering
+   index: 3
+ - name: Federal University of Uberlândia
+   index: 3
+date: 06 January, 2020
 bibliography: paper.bib
 ---
 
@@ -140,14 +152,17 @@ The results should be:
 ![](result_MODSCALE.png)
 
 **Fig. 5:** Quantile-Quantile plot with the confidence bands based on the Kolmogorov-Sminorv two sample test.
+
 ![](result_qq.png)
 
 
 **Fig. 6:** Probability-Probability plot with the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
+
 ![](result_pp.png)
 
 
 **Fig. 7:** Comulative distribution function with the empirical points and the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
+
 ![](result_CDF.png)
 
 
