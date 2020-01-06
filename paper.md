@@ -123,8 +123,8 @@ thresh_modeling.ppplot(data, 30, 'mle', 0.05) #(sample array, threshold,
 thresh_modeling.gpdcdf(data, 30, 'mle', 0.05) #(sample array, threshold,
 #fit method, confidence level)
 thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle') #(sample aray, 
-#threshold, confidence level, block size (daily observations, in other words, annual blocks),
-#return period (100 years) to compute the return level, fit method.)
+#threshold, confidence level, block size (daily observations, in other words, 
+#annual blocks), return period (100 years) to compute the return level, fit method.)
 ```
 The results should be: 
 
