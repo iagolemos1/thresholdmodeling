@@ -107,17 +107,24 @@ A fast tutorial on how to use the software and get the results presented by [@co
 from thresholdmodeling import thresh_modeling #importing package
 import pandas as pd #importing pandas
 
-url = 'https://raw.githubusercontent.com/iagolemos1/thresholdmodeling/master/dataset/rain.csv' #saving url
+url = 'https://raw.githubusercontent.com/iagolemos1/thresholdmodeling/master/dataset/rain.csv'#saving url
 df = pd.read_csv(url, error_bad_lines=False) #reading the data from url
 data = df.values #turning data into a numpy array
 
 thresh_modeling.MRL(data, 0.05) #(sample array, confidence level)
-thresh_modeling.Parameter_Stability_plot(data, 0.05) #(sample array, confidence level)
-thresh_modeling.gpdpdf(data, 30, 'mle', 'sturges', 0.05) #(sample array, threshold, fit method, confidence level)
-thresh_modeling.qqplot(data, 30, 'mle', 0.05) #(sample array, threshold, fit method, confidence level)
-thresh_modeling.ppplot(data, 30, 'mle', 0.05) #(sample array, threshold, fit method, confidence level)
-thresh_modeling.gpdcdf(data, 30, 'mle', 0.05) #(sample array, threshold, fit method, confidence level)
-thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle') #(sample aray, threshold, confidence level, block size (daily observations, in other words, annual blocks), return period (100 years) to compute the return level, fit method.)
+thresh_modeling.Parameter_Stability_plot(data, 0.05) #(sample array, 
+#confidence level)
+thresh_modeling.gpdpdf(data, 30, 'mle', 'sturges', 0.05) #(sample array, 
+#threshold, fit method, confidence level)
+thresh_modeling.qqplot(data, 30, 'mle', 0.05) #(sample array, threshold, 
+#fit method, confidence level)
+thresh_modeling.ppplot(data, 30, 'mle', 0.05) #(sample array, threshold, 
+#fit method, confidence level)
+thresh_modeling.gpdcdf(data, 30, 'mle', 0.05) #(sample array, threshold,
+#fit method, confidence level)
+thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle') #(sample aray, 
+#threshold, confidence level, block size (daily observations, in other words, annual blocks),
+#return period (100 years) to compute the return level, fit method.)
 ```
 The results should be: 
 
