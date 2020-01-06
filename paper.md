@@ -133,21 +133,21 @@ The results should be:
 
 **Fig. 4:** Probability density function plot for the given dataset with empirical histograms.
 
-![](result_MODSCALE.png)
-
-**Fig. 5:** Quantile-Quantile plot with the confidence bands based on the Kolmogorov-Sminorv two sample test.
-
 ![](result_qq.png)
 
-
-**Fig. 6:** Probability-Probability plot with the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
+**Fig. 5:** Quantile-Quantile plot with the confidence bands based on the Kolmogorov-Sminorv two sample test.
 
 ![](result_pp.png)
 
 
-**Fig. 7:** Comulative distribution function with the empirical points and the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
+**Fig. 6:** Probability-Probability plot with the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
 
 ![](result_CDF.png)
+
+
+**Fig. 7:** Comulative distribution function with the empirical points and the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
+
+![](result_retlev.png)
 
 
 **Fig. 8:** Return level plot with the empirical estimatives of the return level and the confidence bands based on the Delta Method.
