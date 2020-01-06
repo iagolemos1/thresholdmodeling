@@ -61,8 +61,8 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 ## Model Diagnostics and Return Level Analysis
 * **Return Level Computation and Plot** : Computing a return value for a given return period is also possible, with a confidence interval obtained by the Delta Method [@coles]. Furthermore, a return level plot is provided,using the Delta Method in order to obtain the confidence bands. In order to compare, the empirical return level plot is provided. 
 
-## Data Analysis 
-* **Declustering and Data Visualization** : It is possible to visualize the data during the unit of a return period. Also, for a giving empirical rule (number of days, for example), it is possible to cluster the dataset and, taking the maximum observation of each cluster, a declustering of maximuns is done. 
+## Declustering and Data Visualization
+It is possible to visualize the data during the unit of a return period. Also, for a giving empirical rule (number of days, for example), it is possible to cluster the dataset and, taking the maximum observation of each cluster, a declustering of maximuns is done. 
 
 ## Further Functions
 It is also possible to compute sample L-Moments, model L-Moments, non-central moments, differential entropy and the survival function plot. 
@@ -85,7 +85,6 @@ utils = importr('utils')
 utils.chooseCRANmirror(ind=1)
 utils.install_packages('POT') #installing POT package
 ```
-
 # Reproducibility and User's Guide
 
 In the repository on [GitHub page](https://github.com/iagolemos1/thresholdmodeling) is possible
@@ -109,9 +108,7 @@ thresh_modeling.qqplot(data, 30, 'mle', 0.05)
 thresh_modeling.ppplot(data, 30, 'mle', 0.05) 
 thresh_modeling.gpdcdf(data, 30, 'mle', 0.05) 
 thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle') 
-```
-The results should be: 
-
+``` 
 ![](result_MRL.png)
 
 **Fig. 1:** Mean Residual Life Plot for the daily rainfall dataset.
