@@ -27,7 +27,17 @@ This file presents a documentation of the functions presented in the ``threshold
 
 ## Declustering and Data Visualization
 
-* **``decluster(sample, threshold, block_size)``**: This functions returns two graphics: The data against the unit of return period (days, for example), and the declustered data based on the block size and the maximum of each block. ``Sample`` is a 1-D array of the observations, ``threshold`` is the chosen threshold and ``block_size`` is the number of observations that will be part of a cluster, for example: if the dataset is daily and the idea is to cluster based on months, ``block_size`` should be 30. 
+* **``decluster(sample, threshold, block_size)``** : This function returns two graphics: The data against the unit of return period (days, for example), and the declustered data based on the block size and the maximum of each block. ``Sample`` is a 1-D array of the observations, ``threshold`` is the chosen threshold and ``block_size`` is the number of observations that will be part of a cluster, for example: if the dataset is daily and the idea is to cluster based on months, ``block_size`` should be 30. 
 
+## Further Functions for Additional Analysis
 
+* **``non_central_moments(sample, threshold, fit_method)``** : This function returns the non-central moments estimated from the model.
+``Sample`` is a 1-D array of the observations, ``threshold`` is the chosen threshold and ``fit_method`` is one of the following fit methods (string format): 'mle', 'mple', 'moments', 'pwmu', 'pwmb', 'mdpd', 'med', 'pickands', 'lme' and 'mgf' (for more information see **Model Fit**).
+
+* **``lmom_dist(sample, threshold, fit_method)``** : This function returns the L-moments estimated from the model.
+``Sample`` is a 1-D array of the observations, ``threshold`` is the chosen threshold and ``fit_method`` is one of the following fit methods (string format): 'mle', 'mple', 'moments', 'pwmu', 'pwmb', 'mdpd', 'med', 'pickands', 'lme' and 'mgf' (for more information see **Model Fit**).
+
+* **``lmom_sample(sample)``** : This function returns the L-moments estimated from the sample. ``Sample`` is a 1-D array of the observations.
+
+* **``entropy(sample, b, threshold, fit_method)``** : This function returns the differential entropy of the model in nats. ``Sample`` is a 1-D array of the observations, ``b`` must be equal to 'e' (changing it does not take difference in the result, it is just to ilustrate the Euler's number for getting the result in nats, ``threshold`` is the chosen threshold and ``fit_method`` is one of the following fit methods (string format): 'mle', 'mple', 'moments', 'pwmu', 'pwmb', 'mdpd', 'med', 'pickands', 'lme' and 'mgf' (for more information see **Model Fit**).
 
