@@ -22,5 +22,11 @@ utils = importr('utils')
 utils.chooseCRANmirror(ind=1)
 utils.install_packages('POT') #installing POT package
 ```
-Or, it is possible to download this [file](https://github.com/iagolemos1/thresholdmodeling/blob/master/install_pot.py) in order to run it in yout IDE and installing ``POT``. 
+Or, it is possible to download this [file](https://github.com/iagolemos1/thresholdmodeling/blob/master/install_pot.py) in order to run it in yout IDE and installing ``POT``.
+
+# Tutorial
+In the file [test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) it is possible to see how the package should be used. Any doubts, please, contact me. 
+
+# Backgroud
+I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering, in a partnership with the Petróleo Brasileiro S.A company. 
 
