@@ -42,8 +42,8 @@ a stochastic behavior of a given processes in an unusually level, being of minim
 
 In this context, this package provides a complete toolkit to conduct a threshold model analysis, since the threshold selection until deep and complex statistical analyses using the Peak-Over-Threshold Method combined to the Generalized Pareto Distribution.
 
-Into a software context, it is possible to see a strong community working with ``R`` packages like ``POT``[@POT],``evd`` [@evd] and ``extRemes`` [@extremes], which ones provides a complete extreme value modeling. 
-Otherwise, in ``Python``, it is possible to find the ``scikit-extremes``[@kiko], which one does not contemple the threshold models yet. In addition, another package is ``scipy``, with the ``genpareto`` [@scipy] functions,which also does not provide excesses modeling functions. Moreover, this package brings to the community a possibility to conduct a extreme value analysis using a strong, consolidated and high-level programming language given the importance of this approach in corrosion engineering [@scarf] and [@tan], hydrology [@katz], enviromental data [@max] and [@esther] and many other fields of natural sciences and engineering. 
+Into a software context, it is possible to see a strong community working with ``R`` packages like ``POT`` [@POT],``evd`` [@evd] and ``extRemes`` [@extremes], which ones provides a complete extreme value modeling. 
+Otherwise, in ``Python``, it is possible to find the ``scikit-extremes`` [@kiko], which one does not contemple the threshold models yet. In addition, another package is ``scipy``, with the ``genpareto`` [@scipy] functions,which also does not provide excesses modeling functions. Moreover, this package brings to the community a possibility to conduct a extreme value analysis using a strong, consolidated and high-level programming language given the importance of this approach in corrosion engineering [@scarf] and [@tan], hydrology [@katz], enviromental data [@max] and [@esther] and many other fields of natural sciences and engineering. 
 
 Hence, the ``thresholdmodeling`` package presents numerous functions to model the stochastic behavior of a extreme process. For a complete introduction of the complete fifteen package functions it is crucial to go to the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling). Some features in the package are shown below. 
 
@@ -53,7 +53,7 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 * **Parameter Stability Plot** : Also, it is possible to get the two graphics related to the shape and the modified scale parameters stability plot, as they are defined in [@coles].
 
 ## Model Fit
-* **Fit the GPD Model** : Fitting a given dataset to a GPD model using some methods (see [**Model Fit**](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit))
+* **Fit the GPD Model** : Fitting a given dataset to a GPD model using some methods (see [**Model Fit**](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit)).
 
 ## Model Checking
 * **Probability Density Function, Comulative Distribution Function, Quantile-Quantile and Probability-Probability Plots** : Plots the theoretical probability density function with the normalized empirical histograms for a given dataset, using some bin methods (see [``gpdpdf``](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit), the heoretical and empirical CDF with the Dvoretzky–Kiefer–Wolfowitz confidence bands and the QQ and PP plots, comparing the sample and the theoretical values. The first one uses the Kolmogorov-Smirnov Two Sample test for getting the confidence bands while the second one uses the Dvoretzky–Kiefer–Wolfowitz method.
@@ -72,7 +72,7 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 
 It is also possible to compute sample L-Moments, model L-Moments, non-central moments, differential entropy and the survival function plot. 
 
-# Installation of the software
+# Installation 
 
 For installing the package just use the following command (it is already in PyPi): 
 ```
