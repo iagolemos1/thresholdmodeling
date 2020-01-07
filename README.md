@@ -116,7 +116,7 @@ Optimization Information
 These are the GPD model estimatives using the maximum likelihood estimator.
 
 ## Model Checking
-Once the GPD model is defined, it is necessary to verify if the model is reasonable and describes well the empirical observations. Plots like probability density function, comulative distribution function, quantile-quantile and probability-probability can show to us if the model is good. It is possible using some functions of the package: ``gpdpdf, gpdcdf, qqplot`` and ``ppplot``. By running these lines:
+Once the GPD model is defined, it is necessary to verify if the model is reasonable and describes well the empirical observations. Plots like probability density function, comulative distribution function, quantile-quantile and probability-probability can show to us if the model is good. It is possible using some functions of the package: ``gpdpdf``, ``gpdcdf``, ``qqplot`` and ``ppplot``. By running these lines:
 ```python
 thresh_modeling.gpdpdf(data, 30, 'mle', 'sturges', 0.05)
 thresh_modeling.gpdcdf(data, 30, 'mle', 0.05)
@@ -132,6 +132,15 @@ The results must be:
 ![](result_qq.png)
 
 ![](result_pp.png)
+
+Once it is possible to verifiy that the theoretical model describes very well the empirical observations, the next step it to use the main tool of the extreme values approach: extrapolation over the unit of the return period.
+
+## Return Value Analysis
+The first thing that must be defined is: what is the unit of the return period? In this example, the unit is days because the observations are **daily**, but in other applications, like corrosion engineering, the unit may be number of observations. 
+
+Using the function ``return_value`` is possible to get two informations: 
+* **1** : The return value for a given return period and;
+* **2** : The return value plot, that works very well for a model diagnostic.
 
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
