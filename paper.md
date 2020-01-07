@@ -79,7 +79,7 @@ In the repository on [GitHub page](https://github.com/iagolemos1/thresholdmodeli
 to get the dataset: Daily Rainfall in the South-West of England from 1914 to 1962. 
 Using it is a way of confronting the software in order to verify its results and compare it with the forseen ones in [@coles]. For a more detailed tutorial of the using of each function, go to the [Test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) folder.
 
-A fast tutorial on how to use the software and get some of the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md) and for more detailes of reproducibility see the [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md)
+A minimal simple example on how to use the software and get some of the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md) and for more detailes of reproducibility see the [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md)
 
 ```python
 from thresholdmodeling import thresh_modeling 
@@ -90,26 +90,16 @@ url = 'https://raw.githubusercontent.com/iagolemos1
 df = pd.read_csv(url, error_bad_lines=False) 
 data = df.values 
 
-thresh_modeling.MRL(data, 0.05) 
-thresh_modeling.qqplot(data, 30, 'mle', 0.05) 
-thresh_modeling.ppplot(data, 30, 'mle', 0.05)  
+thresh_modeling.MRL(data, 0.05)   
 thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle') 
 ``` 
 ![](result_MRL.png)
 
 **Fig. 1:** Mean Residual Life Plot for the daily rainfall dataset.
 
-![](result_qq.png)
-
-**Fig. 2:** Quantile-Quantile plot with the confidence bands based on the Kolmogorov-Sminorv two sample test.
-
-![](result_pp.png)
-
-**Fig. 3:** Probability-Probability plot with the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
-
 ![](result_retlvl.png)
 
-**Fig. 4:** Return level plot with the empirical estimatives of the return level and the confidence bands based on the Delta Method.
+**Fig. 2:** Return level plot with the empirical estimatives of the return level and the confidence bands based on the Delta Method.
 
 Also, for the given return period (100 years), the software presentes the following results in the terminal:
 ```
