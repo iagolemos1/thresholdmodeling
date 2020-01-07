@@ -53,12 +53,77 @@ The results must be:
 
 Then, by analysing the three graphics, it is reasonable taking the threshold value as 30.
 
+## Model Fit
 Once the threshold value is defined, it is possible to fit the dataset to a GPD model by using the function ``gpdfit``running the following line and using the maximum likelihood estimation method:
 
 ```python
 thresh_modeling.gpdfit(data, 30, 'mle')
 ```
 
+The results must be in Terminal like:
+```python
+from thresholdmodeling import thresh_modeling #importing package
+import pandas as pd #importing pandas
+
+url = 'https://raw.githubusercontent.com/iagolemos1/thresholdmodeling/master/dataset/rain.csv' #saving url
+df =  pd.read_csv(url, error_bad_lines=False) #getting data
+data = df.values.ravel() #turning data into an array
+
+thresh_modeling.MRL(data, 0.05)   
+thresh_modeling.Parameter_Stability_plot(data, 0.05)
+```python
+Estimator: MLE
+
+ Deviance: 970.1874
+
+      AIC: 974.1874
+
+
+Varying Threshold: FALSE
+
+
+  Threshold Call: 30L
+
+    Number Above: 152
+
+Proportion Above: 0.0087
+
+
+Estimates
+
+ scale   shape
+
+7.4411  0.1845
+
+
+Standard Error Type: observed
+
+
+Standard Errors
+
+ scale   shape
+
+0.9587  0.1012
+
+
+Asymptotic Variance Covariance
+
+       scale     shape
+
+scale   0.91920  -0.06554
+
+shape  -0.06554   0.01025
+
+
+Optimization Information
+
+  Convergence: successful
+
+  Function Evaluations: 14
+
+  Gradient Evaluations: 6
+```
+These are the GPD model estimatives using the maximum likelihood estimator.
 
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
