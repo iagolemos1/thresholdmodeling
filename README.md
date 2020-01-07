@@ -146,6 +146,16 @@ By running this line (go to [Model Diagnostics and Return Level Analysis](https:
 ```python
 thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle')
 ```
+It means, the return period we want to know the exact return value is 36500 days or 100 years. With the 365, we are saying that the annual number of observations is 365. 
+
+The results must be:
+
+![](result_retlvl.png)
+
+```
+The return value for the given return period is 106.34386649996667 ± 40.86691363790978
+```
+
 
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
