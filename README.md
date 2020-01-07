@@ -158,6 +158,21 @@ The return value for the given return period is 106.34386649996667 ± 40.8669136
 Hence, by the graphic, it is possible to say that the theoretical model is very well fitted. 
 Also, it was possible to compute the return value in 100 years.
 
+## Declustering
+Stuart Coles's in his [book](https://www.springer.com/gp/book/9781852334598) says that if the extremes assume a tendency to be clustered in a stationary series. Hence another pratice would be need to model these values. The pratice consists in the declustering, which is: cluster data and decluster by its maximuns. For this example, it is clear that, at least initialy, the dataset is not orgnanized in clusters. With the function ``decluster`` it is possible to observe the dataset plot against its unit of return period, but, also it is possible to cluster it using a given block size (in this example it will be monthly, then the block size will be 30 days), and then decluster it by taking the maximum of each block. 
+
+By running these lines:
+```python
+thresh_modeling.decluster(data, 30, 30)
+```
+The result must be:
+
+![](nocluster.png)
+
+![](declustered.png)
+
+It is important to say that the unit of the return period after the decluster changes (monthly). With the first graph is possible to observe that, at least initialy, there is not any pattern. However, it does not means that it is not possible to descluter the data set to a given block size, which is possible to see in the second graphic. 
+
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
 
