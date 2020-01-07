@@ -155,7 +155,8 @@ The results must be:
 ```
 The return value for the given return period is 106.34386649996667 ± 40.86691363790978
 ```
-
+Hence, by the graphic, it is possible to say that the theoretical model is very well fitted. 
+Also, it was possible to compute the return value in 100 years.
 
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
