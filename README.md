@@ -44,9 +44,21 @@ thresh_modeling.MRL(data, 0.05)
 thresh_modeling.Parameter_Stability_plot(data, 0.05)
 ```
 The results must be:
+
 ![](result_MRL.png)
+
 ![](result_SHAPE.png)
+
 ![](result_MODSCALE.png)
+
+Then, by analysing the three graphics, it is reasonable taking the threshold value as 30.
+
+Once the threshold value is defined, it is possible to fit the dataset to a GPD model by using the function ``gpdfit``running the following line and using the maximum likelihood estimation method:
+
+```python
+thresh_modeling.gpdfit(data, 30, 'mle')
+```
+
 
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
