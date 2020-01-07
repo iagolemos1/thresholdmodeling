@@ -79,7 +79,7 @@ In the repository on [GitHub page](https://github.com/iagolemos1/thresholdmodeli
 to get the dataset: Daily Rainfall in the South-West of England from 1914 to 1962. 
 Using it is a way of confronting the software in order to verify its results and compare it with the forseen ones in [@coles]. For a more detailed tutorial of the using of each function, go to the [Test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) folder.
 
-A fast tutorial on how to use the software and get some of the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md)and for more detailes of reproducibility see the [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md)
+A fast tutorial on how to use the software and get some of the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md) and for more detailes of reproducibility see the [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md)
 
 ```python
 from thresholdmodeling import thresh_modeling 
