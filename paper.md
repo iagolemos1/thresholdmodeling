@@ -69,9 +69,9 @@ It is possible to visualize the data during the unit of a return period. Also, f
 ## Further Functions
 It is also possible to compute sample L-Moments, model L-Moments, non-central moments, differential entropy and the survival function plot. 
 
-# Installation 
+## Installation 
 
-For installation instructions, go to [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md)
+For installation instructions, go to [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md).
 
 # Reproducibility and User's Guide
 
@@ -108,7 +108,6 @@ thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle')
 **Fig. 3:** Probability-Probability plot with the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
 
 ![](result_retlvl.png)
-
 
 **Fig. 4:** Return level plot with the empirical estimatives of the return level and the confidence bands based on the Delta Method.
 
