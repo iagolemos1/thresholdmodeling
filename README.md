@@ -142,6 +142,11 @@ Using the function ``return_value`` is possible to get two informations:
 * **1** : The return value for a given return period and;
 * **2** : The return value plot, that works very well for a model diagnostic.
 
+By running this line (go to [Model Diagnostics and Return Level Analysis](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-diagnostics-and-return-level-analysis) for more information about the function):
+```python
+thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle')
+```
+
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
 
