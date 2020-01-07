@@ -133,7 +133,7 @@ The results must be:
 
 ![](result_pp.png)
 
-Once it is possible to verifiy that the theoretical model describes very well the empirical observations, the next step it to use the main tool of the extreme values approach: extrapolation over the unit of the return period.
+Once it is possible to verifiy that the theoretical model describes very well the empirical observations, the next step is to use the main tool of the extreme values approach: extrapolation over the unit of the return period.
 
 ## Return Value Analysis
 The first thing that must be defined is: what is the unit of the return period? In this example, the unit is days because the observations are **daily**, but in other applications, like corrosion engineering, the unit may be number of observations. 
@@ -156,7 +156,7 @@ The results must be:
 The return value for the given return period is 106.34386649996667 ± 40.86691363790978
 ```
 Hence, by the graphic, it is possible to say that the theoretical model is very well fitted. 
-Also, it was possible to compute the return value in 100 years.
+Also, it was possible to compute the return value in 100 years. In other words, the rainfall preciptation once in every 100 years must be between 65.4470 and 147.2108 mm.
 
 ## Declustering
 Stuart Coles's in his [book](https://www.springer.com/gp/book/9781852334598) says that if the extremes assume a tendency to be clustered in a stationary series, another pratice would be need to model these values. The pratice consists in declustering, which is: cluster data and decluster by its maximuns. For this example, it is clear that, at least initialy, the dataset is not orgnanized in clusters. With the function ``decluster`` it is possible to observe the dataset plot against its unit of return period, but, also it is possible to cluster it using a given block size (in this example it will be monthly, then the block size will be 30 days), and then decluster it by taking the maximum of each block. 
