@@ -173,6 +173,11 @@ The result must be:
 
 It is important to say that the unit of the return period after the decluster changes (monthly). With the first graph is possible to observe that, at least initialy, there is not any pattern. However, it does not means that it is not possible to descluter the data set to a given block size, which is possible to see in the second graphic. 
 
+In a case that it is necessary to decluster the dataset, the second one, shown in the declustered graphic must be used. 
+
+## Further Functions
+The other functions that are not in this tutorial can be used as it is shown in the [test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) file. The discription of each one is in the [Functions Documenation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md). 
+
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
 
