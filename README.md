@@ -178,6 +178,9 @@ In a case that it is necessary to decluster the dataset, the second one, shown i
 ## Further Functions
 The other functions that are not in this tutorial can be used as it is shown in the [test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) file. The discription of each one is in the [Functions Documenation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md). 
 
+## Doubts
+Any doubts about the package, don't hesitate to contact me. 
+
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
 
