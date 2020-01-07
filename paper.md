@@ -47,6 +47,8 @@ Otherwise, in ``Python``, it is possible to find the ``scikit-extremes`` [@kiko]
 
 Hence, the ``thresholdmodeling`` package presents numerous functions to model the stochastic behavior of a extreme process. For a complete introduction of the complete fifteen package functions it is crucial to go to the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling). 
 
+# Package Features
+
 ## Threshold Selection
 * **Mean Residual Life Plot** : It is possible to plot the Mean Residual Life function, as it is defined in [@coles];
 * **Parameter Stability Plot** : Also, it is possible to get the two graphics related to the shape and the modified scale parameters stability plot, as they are defined in [@coles].
@@ -69,84 +71,50 @@ It is also possible to compute sample L-Moments, model L-Moments, non-central mo
 
 # Installation 
 
-For installing the package just use the following command (it is already in PyPi): 
-```
-pip install thresholdmodeling
-```
-The Python dependencies for runing the software will install automatically with this command.
+For installation instructions, go to [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md)
 
-Once the package is installed, it is necessary to run this lines on your IDE for installing ``POT`` package:
-```python
-from rpy2.robjects.packages import importr
-import rpy2.robjects.packages as rpackages
-
-base = importr('base')
-utils = importr('utils')
-utils.chooseCRANmirror(ind=1)
-utils.install_packages('POT') #installing POT package
-```
 # Reproducibility and User's Guide
 
 In the repository on [GitHub page](https://github.com/iagolemos1/thresholdmodeling) is possible
 to get the dataset: Daily Rainfall in the South-West of England from 1914 to 1962. 
 Using it is a way of confronting the software in order to verify its results and compare it with the forseen ones in [@coles]. For a more detailed tutorial of the using of each function, go to the [Test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) folder.
 
-A fast tutorial on how to use the software and get the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md).
+A fast tutorial on how to use the software and get some of the results presented by [@coles] is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md)and for more detailes of reproducibility see the [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md)
 
 ```python
 from thresholdmodeling import thresh_modeling 
 import pandas as pd 
 
-url = 'https://raw.githubusercontent.com/iagolemos1/thresholdmodeling/master/dataset/rain.csv'
+url = 'https://raw.githubusercontent.com/iagolemos1
+/thresholdmodeling/master/dataset/rain.csv'
 df = pd.read_csv(url, error_bad_lines=False) 
 data = df.values 
 
 thresh_modeling.MRL(data, 0.05) 
-thresh_modeling.Parameter_Stability_plot(data, 0.05) 
-thresh_modeling.gpdpdf(data, 30, 'mle', 'sturges', 0.05) 
 thresh_modeling.qqplot(data, 30, 'mle', 0.05) 
-thresh_modeling.ppplot(data, 30, 'mle', 0.05) 
-thresh_modeling.gpdcdf(data, 30, 'mle', 0.05) 
+thresh_modeling.ppplot(data, 30, 'mle', 0.05)  
 thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle') 
 ``` 
 ![](result_MRL.png)
 
 **Fig. 1:** Mean Residual Life Plot for the daily rainfall dataset.
 
-![](result_SHAPE.png)
-
-**Fig. 2:** Shape Parameter Stability Plot for the daily rainfall dataset.
-
-![](result_MODSCALE.png)
-
-**Fig. 3:** Modified Scale Parameter Stability Plot for the daily rainfall dataset.
-
-![](result_pdf.png)
-
-**Fig. 4:** Probability density function plot for the given dataset with empirical histograms.
-
 ![](result_qq.png)
 
-**Fig. 5:** Quantile-Quantile plot with the confidence bands based on the Kolmogorov-Sminorv two sample test.
+**Fig. 2:** Quantile-Quantile plot with the confidence bands based on the Kolmogorov-Sminorv two sample test.
 
 ![](result_pp.png)
 
-
-**Fig. 6:** Probability-Probability plot with the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
-
-![](result_CDF.png)
-
-
-**Fig. 7:** Comulative distribution function with the empirical points and the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
+**Fig. 3:** Probability-Probability plot with the confidence bands based on the Dvoretzky–Kiefer–Wolfowitz method.
 
 ![](result_retlvl.png)
 
 
-**Fig. 8:** Return level plot with the empirical estimatives of the return level and the confidence bands based on the Delta Method.
+**Fig. 4:** Return level plot with the empirical estimatives of the return level and the confidence bands based on the Delta Method.
 
 Also, for the given return period (100 years), the software presentes the following results in the terminal:
 ```
-The return value for the given return period is 106.34386649996667 ± 40.86691363790978
+The return value for the given return period is 106.3439 ± 40.8669
 ```
 
 For more details, the documentation is up-to-date on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling).
