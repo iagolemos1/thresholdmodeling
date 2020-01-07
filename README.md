@@ -24,8 +24,29 @@ utils.install_packages('POT') #installing POT package
 ```
 Or, it is possible to download this [file](https://github.com/iagolemos1/thresholdmodeling/blob/master/install_pot.py) in order to run it in yout IDE and installing ``POT``.
 
-# Tutorial
-In the file [test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) it is possible to see how the package should be used. Any doubts, please, contact me. 
+# User's guide and Reproducibility 
+In the file [test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) it is possible to see how the package should be used. In [Functions Documenation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md) it may be seen a complete documentation on how to use the functions presented in the package. 
+
+In order to present a tutorial on how to use the package and its results, a guide is presented below, using the example on the Coles's [book](https://www.springer.com/gp/book/9781852334598) with the [Daily Rainfall in South-West England](https://github.com/iagolemos1/thresholdmodeling/blob/master/dataset/rain.csv) dataset.
+
+## Threshold Selection
+Firstly, it is necessary to conduct a threshold value analysis using the first two functions of the package: ``MRL`` and ``Parameter_Stability_Plot``, in order to select a reasonable threshold value. 
+Runing this: 
+```python
+from thresholdmodeling import thresh_modeling #importing package
+import pandas as pd #importing pandas
+
+url = 'https://raw.githubusercontent.com/iagolemos1/thresholdmodeling/master/dataset/rain.csv' #saving url
+df =  pd.read_csv(url, error_bad_lines=False) #getting data
+data = df.values.ravel() #turning data into an array
+
+thresh_modeling.MRL(data, 0.05)   
+thresh_modeling.Parameter_Stability_plot(data, 0.05)
+```
+The results must be:
+![](result_MRL.png)
+![](result_SHAPE.png)
+![](result_MODSCALE.png)
 
 # Backgroud
 I am a mechanical engineering student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
