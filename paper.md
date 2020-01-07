@@ -99,7 +99,7 @@ thresh_modeling.return_value(data, 30, 0.05, 365, 36500, 'mle')
 
 **Fig. 1:** Mean Residual Life Plot for the daily rainfall dataset.
 
-![](result_qq.png)
+![](result_qq.png)![](result_pp.png)
 
 **Fig. 2:** Quantile-Quantile plot with the confidence bands based on the Kolmogorov-Sminorv two sample test.
 
