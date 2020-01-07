@@ -61,17 +61,7 @@ thresh_modeling.gpdfit(data, 30, 'mle')
 ```
 
 The results must be in Terminal like:
-```python
-from thresholdmodeling import thresh_modeling #importing package
-import pandas as pd #importing pandas
-
-url = 'https://raw.githubusercontent.com/iagolemos1/thresholdmodeling/master/dataset/rain.csv' #saving url
-df =  pd.read_csv(url, error_bad_lines=False) #getting data
-data = df.values.ravel() #turning data into an array
-
-thresh_modeling.MRL(data, 0.05)   
-thresh_modeling.Parameter_Stability_plot(data, 0.05)
-```python
+```
 Estimator: MLE
 
  Deviance: 970.1874
