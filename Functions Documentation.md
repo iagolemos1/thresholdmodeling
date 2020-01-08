@@ -39,5 +39,5 @@ This file presents a documentation of the functions presented in the ``threshold
 
 * **``lmom_sample(sample)``** : This function returns the L-moments estimated from the sample. ``Sample`` is a 1-D array of the observations.
 
-* **``entropy(sample, b, threshold, fit_method)``** : This function returns the differential entropy of the model in nats. ``Sample`` is a 1-D array of the observations, ``b`` must be equal to 'e' (changing it does not take difference in the result, it is just to ilustrate the Euler's number for getting the result in nats, ``threshold`` is the chosen threshold and ``fit_method`` is one of the following fit methods (string format): 'mle', 'mple', 'moments', 'pwmu', 'pwmb', 'mdpd', 'med', 'pickands', 'lme' and 'mgf' (for more information see **Model Fit**).
+* **``entropy(sample, b, threshold, fit_method)``** : This function returns the differential entropy of the model in nats. ``Sample`` is a 1-D array of the observations, ``b`` must be equal to 'e' (changing it does not take any difference in the result, it is just to ilustrate the Euler's number), ``threshold`` is the chosen threshold and ``fit_method`` is one of the following fit methods (string format): 'mle', 'mple', 'moments', 'pwmu', 'pwmb', 'mdpd', 'med', 'pickands', 'lme' and 'mgf' (for more information see **Model Fit**).
 
