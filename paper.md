@@ -49,6 +49,7 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 
 ## Threshold Selection
 * **Mean Residual Life Plot** : It is possible to plot the Mean Residual Life function, as it is defined in @coles;
+
 * **Parameter Stability Plot** : Also, it is possible to get the two graphics related to the shape and the modified scale parameters stability plot, as they are defined in @coles.
 
 ## Model Fit
@@ -57,7 +58,7 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 ## Model Checking
 * **Probability Density Function, Cumulative Distribution Function, Quantile-Quantile and Probability-Probability Plots** : Plots the theoretical probability density function with the normalized empirical histograms for a given dataset, using some bin methods (see [``gpdpdf``](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit)).
 Also, the theoretical CDF in comparison to the empirical one with the Dvoretzky–Kiefer–Wolfowitz confidence bands can be drawn. 
-In addition, The QQ and PP plots, comparing the sample and the theoretical values can be drawn, where the first one uses the Kolmogorov-Smirnov Two Sample Test for getting the confidence bands while the second one uses the Dvoretzky–Kiefer–Wolfowitz method.
+In addition, The QQ and PP plots, comparing the sample and the theoretical values can be drawn, where the first one uses the Kolmogorov-Smirnov Two Sample Test for getting the confidence bands while the second one uses the Dvoretzky–Kiefer–Wolfowitz method;
 
 * **L-Moments Plots** : L-Skewness against L-Kurtosis plot for a given threshold values using the Generalized Pareto parametrization. As warning, L-Moments plots are really difficult to interpret. See @POT and @hosking for more details.
 
