@@ -36,12 +36,12 @@ bibliography: paper.bib
 
 Extreme value analysis has been emerged as one of the most important disciplines
 for the applied sciences when dealing with reduced datasets and when the main idea is to
-extrapolate the observations over a given time. By using a threshold model with an asymptotic model characterization, it is posible to work with the Generalized Pareto Distribution (GPD) [@coles] and use it to model the stochastic behavior of a procedure in an unusual level, being maximum or minimum. 
+extrapolate the observations over a given time. By using a threshold model with an asymptotic characterization, it is posible to work with the Generalized Pareto Distribution (GPD) [@coles] and use it to model the stochastic behavior of a process at an unusual level, which can be of maximum or minimum. For example, suppose that it is available a large dataset of wind velocity in Florida, USA, during a given time period. It is possible to model this process and to quantify the probability of having extreme events, like hurricanes, which are maximums observations of wind velocity, in a given time period of interest using the return value analysis tool.
 
 In this context, this package provides a complete toolkit to conduct a threshold model analysis, from the beginning phase of selecting the threshold, going through the model fit, model checking and return value analysis. Moreover, statistical moments functions are provided. In case of extremes of dependences sequences it is also possible to conduct a declustering analysis.   
 
 Into a software context, it is possible to see a strong community working with ``R`` packages like ``POT`` [@POT],``evd`` [@evd] and ``extRemes`` [@extremes], that are used for a complete extreme value modeling. 
-Otherwise, in ``Python``, it is possible to find the ``scikit-extremes`` [@kiko], which does not contain the threshold models yet. In addition, another package is ``scipy``, with the ``genpareto`` [@scipy] functions, which also does not provide any Peak-Over-Threshold modeling functions since it is not possible to define a threshold using this package. Moreover, this package brings to the community of scientists, engineers and any other interested person and programmer the possibility to conduct an extreme value analysis using a strong, consolidated and high-level programming language given the importance of  in corrosion engineering [see @scarf; and @tan], hydrology [see @katz], enviromental data analysis [see @max; and @esther] and many other fields of natural sciences and engineering [for a massive number of other examples see @coles p. 1] 
+Otherwise, in ``Python``, it is possible to find the ``scikit-extremes`` [@kiko], which does not contain the threshold models yet. In addition, another package is ``scipy``, with the ``genpareto`` [@scipy] functions, which also does not provide any Peak-Over-Threshold modeling functions since it is not possible to define a threshold using this package. Moreover, this package allows the community of scientists, engineers and any other interested person and programmer the possibility to conduct an extreme value analysis using a strong, consolidated and high-level programming language given the importance of the extreme value theory approach for statistical analysis in corrosion engineering [see @scarf; and @tan], hydrology [see @katz], enviromental data analysis [see @max; and @esther] and many other fields of natural sciences and engineering [for a massive number of other applications see @coles p. 1] 
 
 Hence, the ``thresholdmodeling`` package presents numerous functions to model the stochastic behavior of an extreme process. For a complete introduction of the complete fifteen package functions it is crucial to go to the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling). 
 
@@ -50,7 +50,7 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 ## Threshold Selection
 * **Mean Residual Life Plot** : It is possible to plot the Mean Residual Life function, as it is defined in @coles;
 
-* **Parameter Stability Plot** : Also, it is possible to get the two graphics related to the shape and the modified scale parameters stability plot, as they are defined in @coles.
+* **Parameter Stability Plot** : Also, it is possible to obtain the two parameter stability plots: the Shape Parameter Stability Plot and the Modified Scale Parameter Stability Plot [see @coles from a complete theoretical introduction about these two plots].
 
 ## Model Fit
 * **Fit the GPD Model** : Fitting a given dataset to a GPD model using some methods (see [**Model Fit**](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit)).
@@ -58,7 +58,7 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 ## Model Checking
 * **Probability Density Function, Cumulative Distribution Function, Quantile-Quantile and Probability-Probability Plots** : Plots the theoretical probability density function with the normalized empirical histograms for a given dataset, using some bin methods (see [``gpdpdf``](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit)).
 Also, the theoretical CDF in comparison to the empirical one with the Dvoretzky–Kiefer–Wolfowitz confidence bands can be drawn. 
-In addition, The QQ and PP plots, comparing the sample and the theoretical values can be drawn, where the first one uses the Kolmogorov-Smirnov Two Sample Test for getting the confidence bands while the second one uses the Dvoretzky–Kiefer–Wolfowitz method;
+In addition, The QQ and PP plots, comparing the sample and the theoretical values can be obtained, where the first one uses the Kolmogorov-Smirnov Two Sample Test for getting the confidence bands while the second one uses the Dvoretzky–Kiefer–Wolfowitz method;
 
 * **L-Moments Plots** : L-Skewness against L-Kurtosis plot for a given threshold values using the Generalized Pareto parametrization. As warning, L-Moments plots are really difficult to interpret. See @POT and @hosking for more details.
 
