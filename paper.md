@@ -34,16 +34,14 @@ bibliography: paper.bib
 
 # Summary
 
-Extreme value analysis has been emerged as one of the most important disciplines
+Extreme Value Analysis (EVA) has been emerged as one of the most important disciplines
 for the applied sciences when dealing with reduced datasets and when the main idea is to
-extrapolate the observations over a given time. By using threshold models with an asymptotic model
-characterization, it is possible to work with the Generalized Pareto Distribution (GPD) [@coles] and use it to model 
-the stochastic behavior of a given processes in an unusually level, being of minimum or maximum. 
+extrapolate the observations over a given time. By using a threshold model with an asymptotic model characterization, it is posible to work with a Generalized Pareto Distribution (GPD) [@coles] and use it to model a stochastic behavior of a procedure in an unusual level, being maximum or minimum. 
 
 In this context, this package provides a complete toolkit to conduct a threshold model analysis, from the beginning phase of selecting the threshold, going through the model fit, model checking and return value analysis. Moreover, statistical moments functions are provided. In case of extremes of dependences sequences it is also possible to conduct a declustering analysis.   
 
 Into a software context, it is possible to see a strong community working with ``R`` packages like ``POT`` [@POT],``evd`` [@evd] and ``extRemes`` [@extremes], that are used for a complete extreme value modeling. 
-Otherwise, in ``Python``, it is possible to find the ``scikit-extremes`` [@kiko], which does not contain the threshold models yet. In addition, another package is ``scipy``, with the ``genpareto`` [@scipy] functions, which also does not provide any Peak-Over-Threshold modeling functions since it is not possible to define a threshold using this package. Moreover, this package brings to the community of scientists, engineers and any other interested person and programmer the possibility to conduct an extreme value analysis using a strong, consolidated and high-level programming language given the importance of this approach in corrosion engineering [see @scarf; and @tan], hydrology [see @katz], enviromental data analysis [see @max; and @esther] and many other fields of natural sciences and engineering [for a massive number of other examples see @coles p. 1] 
+Otherwise, in ``Python``, it is possible to find the ``scikit-extremes`` [@kiko], which does not contain the threshold models yet. In addition, another package is ``scipy``, with the ``genpareto`` [@scipy] functions, which also does not provide any Peak-Over-Threshold modeling functions since it is not possible to define a threshold using this package. Moreover, this package brings to the community of scientists, engineers and any other interested person and programmer the possibility to conduct an Extreme Value Analysis using a strong, consolidated and high-level programming language given the importance of  in corrosion engineering [see @scarf; and @tan], hydrology [see @katz], enviromental data analysis [see @max; and @esther] and many other fields of natural sciences and engineering [for a massive number of other examples see @coles p. 1] 
 
 Hence, the ``thresholdmodeling`` package presents numerous functions to model the stochastic behavior of an extreme process. For a complete introduction of the complete fifteen package functions it is crucial to go to the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling). 
 
