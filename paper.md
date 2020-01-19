@@ -36,7 +36,7 @@ bibliography: paper.bib
 
 Extreme Value Analysis (EVA) has been emerged as one of the most important disciplines
 for the applied sciences when dealing with reduced datasets and when the main idea is to
-extrapolate the observations over a given time. By using a threshold model with an asymptotic model characterization, it is posible to work with a Generalized Pareto Distribution (GPD) [@coles] and use it to model a stochastic behavior of a procedure in an unusual level, being maximum or minimum. 
+extrapolate the observations over a given time. By using a threshold model with an asymptotic model characterization, it is posible to work with the Generalized Pareto Distribution (GPD) [@coles] and use it to model a stochastic behavior of a procedure in an unusual level, being maximum or minimum. 
 
 In this context, this package provides a complete toolkit to conduct a threshold model analysis, from the beginning phase of selecting the threshold, going through the model fit, model checking and return value analysis. Moreover, statistical moments functions are provided. In case of extremes of dependences sequences it is also possible to conduct a declustering analysis.   
 
