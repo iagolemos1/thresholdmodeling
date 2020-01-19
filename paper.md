@@ -66,7 +66,7 @@ In addition, The QQ and PP plots, comparing the sample and the theoretical value
 * **Return Level Computation and Plot** : Computing a return value for a given return period is also possible, with a confidence interval obtained by the Delta Method [@coles]. Furthermore, a return level plot is provided, using the Delta Method in order to obtain the confidence bands. In order to compare, the empirical return level plot is provided. 
 
 ## Declustering and Data Visualization
-It is possible to visualize the data during the unit of a return period. Also, for a given empirical rule (number of days, for example), it is possible to cluster the dataset and, taking the maximum observation of each cluster, a declustering of maximums is done. 
+It is possible to visualize the data during the unit of a return period. In case of extreme dependences sequences, for a given empirical rule (number of days, for example), it is possible to cluster the dataset and, taking the maximum observation of each cluster, a declustering of maximums is done. 
 
 ## Further Functions
 It is also possible to compute sample L-Moments, model L-Moments, non-central moments, differential entropy and the survival function plot. 
