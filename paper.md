@@ -50,10 +50,10 @@ Hence, the ``thresholdmodeling`` package presents numerous functions to model th
 ## Threshold Selection
 * **Mean Residual Life Plot** : It is possible to plot the Mean Residual Life function, as it is defined in @coles;
 
-* **Parameter Stability Plot** : Also, it is possible to obtain the two parameter stability plots of the GPD: the Shape Parameter Stability Plot and the Modified Scale Parameter Stability Plot, which is defined from a reparametrization of the GPD scale parameter [see @coles from a complete theoretical introduction about these two plots].
+* **Parameter Stability Plot** : Also, it is possible to obtain the two parameter stability plots of the GPD: the Shape Parameter Stability Plot and the Modified Scale Parameter Stability Plot, which is defined from a reparametrization of the GPD scale parameter [see @coles for a complete theoretical introduction about these two plots].
 
 ## Model Fit
-* **Fit the GPD Model** : Fitting a given dataset to a GPD model using some methods (see [**Model Fit**](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit)).
+* **Fit the GPD Model** : Fitting a given dataset to a GPD model using some fit methods (see [**Model Fit**](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit)).
 
 ## Model Checking
 * **Probability Density Function, Cumulative Distribution Function, Quantile-Quantile and Probability-Probability Plots** : Plots the theoretical probability density function with the normalized empirical histograms for a given dataset, using some bin methods (see [``gpdpdf``](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md#model-fit)).
