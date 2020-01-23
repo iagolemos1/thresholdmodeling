@@ -7,9 +7,9 @@ In this repository you can find the main files of the package, the [Functions Do
 # Installing Package 
 **It is necessary to have internet connection and use Anaconda distribution.**
 
-* For installing Anaconda on Linux, go to [this link](https://docs.anaconda.com/anaconda/install/linux/). For installing on Windows, go to [this one](https://docs.anaconda.com/anaconda/install/windows/). 
+* For installing Anaconda on Linux, go to [this link](https://docs.anaconda.com/anaconda/install/linux/). For installing on Windows, go to [this one](https://docs.anaconda.com/anaconda/install/windows/). For istalling on macOS, go to [this one](https://docs.anaconda.com/anaconda/install/mac-os/).
 
-* For creating your own environment, see [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands). For Linux it uses the terminal and Windows it uses the Anaconda Prompt. 
+* For creating your own environment by using the terminal or Anaconda Prompt, go [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands).
 
 ## Windows Users 
 By using Anaconda Navigator, install R on your environment (easier for Windows users).  
@@ -53,6 +53,8 @@ utils.chooseCRANmirror(ind=1)
 utils.install_packages('POT') #installing POT package
 Or, it is possible to download this [file](https://github.com/iagolemos1/thresholdmodeling/blob/master/install_pot.py) in order to run it in yout IDE and installing ``POT``.
 ```
+# MacOS Users
+The idea is the same. Firstly install R on your environment, then install the ``thresholdmodeling`` package and finish by installing ``POT`` with the provided code. 
 
 # User's guide and Reproducibility 
 In the file [test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) it is possible to see how the package should be used. In [Functions Documenation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md) it may be seen a complete documentation on how to use the functions presented in the package. 
