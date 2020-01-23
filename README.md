@@ -5,8 +5,11 @@ This package is intended for those who wish to conduct an extreme values analysi
 In this repository you can find the main files of the package, the [Functions Documenation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), the [dataset](https://github.com/iagolemos1/thresholdmodeling/blob/master/dataset/rain.csv) used in some examples, the [paper](https://github.com/iagolemos1/thresholdmodeling/blob/master/paper.md) submitted to the [Jounal of Open Source Software](https://joss.theoj.org/) and some tutorials. 
 
 # Installing Package 
-**It is necessary to have internet connection.**
-For installing the package just use the following command (it is already in PyPi): 
+**It is necessary to have internet connection and use Anaconda distribution.**
+## Windows Users 
+By using Anaconda Navigator, install R on your base or on your environment (as you prefer). 
+
+For installing the package just use the following command on your Anaconda prompt (it is already in PyPi): 
 ```
 pip install thresholdmodeling
 ```
@@ -22,7 +25,29 @@ utils = importr('utils')
 utils.chooseCRANmirror(ind=1)
 utils.install_packages('POT') #installing POT package
 ```
+
+## Linux Users
+If you have an environment, run this lines on your terminal:
+```
+conda activate my_env (my_env is your environment name)
+conda install r
+```
+After installing R, find your anaconda directory, and find the actual env folder. It should be somewhere like ~/anaconda3/envs/my_env. Open the terminal in this folder and run this line:
+```
+pip install thresholdmodeling
+```
+Once the package is installed, it is necessary to run this lines on your IDE for installing ``POT R`` package (package that our software uses by means of ``rpy2`` for computing GPD estimatives):
+
+```python
+from rpy2.robjects.packages import importr
+import rpy2.robjects.packages as rpackages
+
+base = importr('base')
+utils = importr('utils')
+utils.chooseCRANmirror(ind=1)
+utils.install_packages('POT') #installing POT package
 Or, it is possible to download this [file](https://github.com/iagolemos1/thresholdmodeling/blob/master/install_pot.py) in order to run it in yout IDE and installing ``POT``.
+```
 
 # User's guide and Reproducibility 
 In the file [test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) it is possible to see how the package should be used. In [Functions Documenation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md) it may be seen a complete documentation on how to use the functions presented in the package. 
