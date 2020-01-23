@@ -6,10 +6,12 @@ In this repository you can find the main files of the package, the [Functions Do
 
 # Installing Package 
 **It is necessary to have internet connection and use Anaconda distribution.**
-## Windows Users 
-By using Anaconda Navigator, install R on your base or on your environment (as you prefer). 
+How to install Anaconda on [Linux](https://docs.anaconda.com/anaconda/install/linux/) and [Windows](https://docs.anaconda.com/anaconda/install/windows/). For creating your [environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) for Linux, by using the terminal, or Windows, by using Anaconda Prompt.
 
-For installing the package just use the following command on your Anaconda prompt (it is already in PyPi): 
+## Windows Users 
+By using Anaconda Navigator, install R on your environment (easier for Windows users).  
+
+For installing the package just use the following command on your Anaconda Prompt (it is already in PyPi): 
 ```
 pip install thresholdmodeling
 ```
@@ -27,12 +29,12 @@ utils.install_packages('POT') #installing POT package
 ```
 
 ## Linux Users
-Run this lines on your terminal ir order to install R on your environment:
+Run this lines on your terminal in order to install R on your environment:
 ```
 conda activate my_env (my_env is your environment name)
 conda install r
 ```
-After installing R, find your anaconda directory, and find the actual env folder. It should be somewhere like ~/anaconda3/envs/my_env. Open the terminal in this folder and run this line:
+After installing R, find your anaconda directory, and find the actual environment folder. It should be somewhere like ~/anaconda3/envs/my_env. Open the terminal in this folder and run this line:
 ```
 pip install thresholdmodeling
 ```
