@@ -6,7 +6,10 @@ In this repository you can find the main files of the package, the [Functions Do
 
 # Installing Package 
 **It is necessary to have internet connection and use Anaconda distribution.**
-How to install Anaconda on [Linux](https://docs.anaconda.com/anaconda/install/linux/) and [Windows](https://docs.anaconda.com/anaconda/install/windows/). For creating your [environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) for Linux, by using the terminal, or Windows, by using Anaconda Prompt.
+
+* For installing Anaconda on Linux, go to [this link](https://docs.anaconda.com/anaconda/install/linux/). For installing on Windows, go to [this one](https://docs.anaconda.com/anaconda/install/windows/). 
+
+* For create your own environment, see [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands). For Linux it uses the terminal and Windows it uses the Anaconda Prompt. 
 
 ## Windows Users 
 By using Anaconda Navigator, install R on your environment (easier for Windows users).  
