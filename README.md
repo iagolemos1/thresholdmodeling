@@ -27,7 +27,7 @@ utils.install_packages('POT') #installing POT package
 ```
 
 ## Linux Users
-If you have an environment, run this lines on your terminal:
+Run this lines on your terminal ir order to install R on your environment:
 ```
 conda activate my_env (my_env is your environment name)
 conda install r
