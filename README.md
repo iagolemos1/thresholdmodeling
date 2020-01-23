@@ -116,7 +116,7 @@ Optimization Information
 These are the GPD model estimatives using the maximum likelihood estimator.
 
 ## Model Checking
-Once the GPD model is defined, it is necessary to verify if the model is reasonable and describes well the empirical observations. Plots like probability density function, comulative distribution function, quantile-quantile and probability-probability can show to us if the model is good. It is possible using some functions of the package: ``gpdpdf``, ``gpdcdf``, ``qqplot`` and ``ppplot``. By running these lines:
+Once the GPD model is defined, it is necessary to verify if the model is reasonable and describes well the empirical observations. Plots like probability density function, cumulative distribution function, quantile-quantile and probability-probability can show to us if the model is good. It is possible to obtain these plots using some functions of the package: ``gpdpdf``, ``gpdcdf``, ``qqplot`` and ``ppplot``. By running these lines:
 ```python
 thresh_modeling.gpdpdf(data, 30, 'mle', 'sturges', 0.05)
 thresh_modeling.gpdcdf(data, 30, 'mle', 0.05)
