@@ -15,7 +15,7 @@ pip install thresholdmodeling
 ```
 The Python dependencies for runing the software will install automatically with this command.
 
-Once the package is installed, it is necessary to run this lines on your IDE for installing ``POT R`` package (package that our software uses by means of ``rpy2`` for computing GPD estimatives):
+Once the package is installed, it is necessary to run these lines on your IDE for installing ``POT R`` package (package that our software uses by means of ``rpy2`` for computing GPD estimatives):
 ```python
 from rpy2.robjects.packages import importr
 import rpy2.robjects.packages as rpackages
