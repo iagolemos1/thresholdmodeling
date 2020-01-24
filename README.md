@@ -65,9 +65,6 @@ utils.chooseCRANmirror(ind=1)
 utils.install_packages('POT') #installing POT package
 Or, it is possible to download this [file](https://github.com/iagolemos1/thresholdmodeling/blob/master/install_pot.py) in order to run it in yout IDE and installing ``POT``.
 ```
-# MacOS Users
-The idea is the same. Firstly install R on your environment, then install the ``thresholdmodeling`` package and finish by installing ``POT`` with the provided code. 
-
 # User's guide and Reproducibility 
 In the file [test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) it is possible to see how the package should be used. In [Functions Documenation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md) it may be seen a complete documentation on how to use the functions presented in the package. 
 
