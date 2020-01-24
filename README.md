@@ -22,7 +22,7 @@ pip install rpy2‑2.9.5‑cp37‑cp37m‑win_amd64.whl
 ```
 conda activate my_env
 conda install -c r rpy2
-conda isntall r
+conda install r
 ```
 After that, `` rpy2`` and r will be installed on your machine. Follow the next steps.
 
