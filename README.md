@@ -44,12 +44,13 @@ utils.install_packages('POT') #installing POT package
 ```
 
 ## Linux Users
-Run this lines on your terminal in order to install R on your environment:
+Firstly, run this lines on your terminal in order to install R and ``rpy2`` package on your environment:
 ```
 conda activate my_env (my_env is your environment name)
 conda install r
+conda install -c r rpy2
 ```
-After installing R, find your anaconda directory, and find the actual environment folder. It should be somewhere like ~/anaconda3/envs/my_env. Open the terminal in this folder and run this line:
+After installing R and ``rpy2``, find your anaconda directory, and find the actual environment folder. It should be somewhere like ~/anaconda3/envs/my_env. Open the terminal in this folder and run this line (the others dependencies will automatically install):
 ```
 pip install thresholdmodeling
 ```
