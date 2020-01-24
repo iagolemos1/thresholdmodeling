@@ -5,7 +5,7 @@ This package is intended for those who wish to conduct an extreme values analysi
 In this repository you can find the main files of the package, the [Functions Documenation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), the [dataset](https://github.com/iagolemos1/thresholdmodeling/blob/master/dataset/rain.csv) used in some examples, the [paper](https://github.com/iagolemos1/thresholdmodeling/blob/master/paper.md) submitted to the [Jounal of Open Source Software](https://joss.theoj.org/) and some tutorials. 
 
 # Installing Package 
-**It is necessary to have internet connection and use Anaconda distribution.**
+**It is necessary to have internet connection and use Anaconda distribution (Python 3).**
 
 * For installing Anaconda on Linux, go to [this link](https://docs.anaconda.com/anaconda/install/linux/). For installing on Windows, go to [this one](https://docs.anaconda.com/anaconda/install/windows/). For istalling on macOS, go to [this one](https://docs.anaconda.com/anaconda/install/mac-os/).
 
