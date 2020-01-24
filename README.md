@@ -24,7 +24,7 @@ conda activate my_env
 conda install -c r rpy2
 conda install r
 ```
-After that, `` rpy2`` and r will be installed on your machine. Follow the next steps.
+After that, `` rpy2`` and ``R`` will be installed on your machine. Follow the next steps.
 
 For installing the package just use the following command on your Anaconda Prompt (it is already in PyPi): 
 ```
