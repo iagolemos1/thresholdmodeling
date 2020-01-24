@@ -12,7 +12,7 @@ In this repository you can find the main files of the package, the [Functions Do
 * For creating your own environment by using the terminal or Anaconda Prompt, go [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands).
 
 ## Windows Users 
-Firstly, it will necessary to install R on your environment and considering that ``rpy2`` (a python dependency package for thresholdmodeling) does not have Windows support, installing it from ``pip install thresholdmodeling`` will results in an error, the same occurs with ``pip install rpy2``. Then, it is necessary to download it from an unuofficial website:
+Firstly, it will necessary to install R on your environment and considering that ``rpy2`` (a python dependency package for thresholdmodeling) does not have Windows support, installing it from ``pip install thresholdmodeling`` will result in an error, the same occurs with ``pip install rpy2``. Then, it is necessary to download it from an unuofficial website:
 https://www.lfd.uci.edu/~gohlke/pythonlibs/
 Here, you must find the rpy2 realese which works on your machine and install it manually going to the download folder with the Anaconda Prompt and run this line, for example (it will depend on the name of the downloaded file):
 ```
