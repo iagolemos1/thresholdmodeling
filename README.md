@@ -21,8 +21,8 @@ pip install rpy2‑2.9.5‑cp37‑cp37m‑win_amd64.whl
 **Or** you can install it from the the Anaconda Prompt by activating your environment and running:
 ```
 conda activate my_env
-conda install -c r rpy2
 conda install r
+conda install -c r rpy2=2.9.4
 ```
 After that, `` rpy2`` and ``R`` will be installed on your machine. Follow the next steps.
 
@@ -48,7 +48,7 @@ Firstly, run this lines on your terminal in order to install R and ``rpy2`` pack
 ```
 conda activate my_env (my_env is your environment name)
 conda install r
-conda install -c r rpy2
+conda install -c r rpy2=2.9.4
 ```
 After installing R and ``rpy2``, find your anaconda directory, and find the actual environment folder. It should be somewhere like ~/anaconda3/envs/my_env. Open the terminal in this folder and run this line (the others dependencies will automatically install):
 ```
