@@ -12,15 +12,27 @@ In this repository you can find the main files of the package, the [Functions Do
 * For creating your own environment by using the terminal or Anaconda Prompt, go [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands).
 
 ## Windows Users 
-By using Anaconda Navigator, install R on your environment (easier for Windows users).  
+Firstly, it will necessary to install R on your environment and considering that ``rpy2`` (a python dependency package for thresholdmodeling) does not have Windows support, installing it from ``pip install thresholdmodeling`` will results in an error, the same occurs with ``pip install rpy2``. Then, it is necessary to download it from an unuofficial website:
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+Here, you must find the rpy2 realese which works on your machine and install it manually going to the download folder with the Anaconda Prompt and run this line, for example (it will depend on the name of the downloaded file):
+```
+pip install rpy2‑2.9.5‑cp37‑cp37m‑win_amd64.whl 
+```
+**Or** you can install it from the the Anaconda Prompt by activating your environment and running:
+```
+conda activate my_env
+conda install -c r rpy2
+conda isntall r
+```
+After that, `` rpy2`` and r will be installed on your machine. Follow the next steps.
 
 For installing the package just use the following command on your Anaconda Prompt (it is already in PyPi): 
 ```
 pip install thresholdmodeling
 ```
-The Python dependencies for runing the software will install automatically with this command.
+The others Python dependencies for runing the software will install automatically with this command.
 
-Once the package is installed, it is necessary to run these lines on your IDE for installing ``POT R`` package (package that our software uses by means of ``rpy2`` for computing GPD estimatives):
+Once the package is installed, it is necessary to run these lines on your IDE for installing ``POT`` ``R`` package (package that our software uses by means of ``rpy2`` for computing GPD estimatives):
 ```python
 from rpy2.robjects.packages import importr
 import rpy2.robjects.packages as rpackages
