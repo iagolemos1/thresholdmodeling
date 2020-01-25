@@ -4,5 +4,6 @@ python:
   - "3.7"
 install:
   - pip install -r requirements.txt
+  - conda install -c r rpy2==2.9.4
 script:
   - python -m unittest discover
