@@ -1,7 +1,7 @@
 scipy
 numpy 
 pandas 
-thresholdmodeling
+thresholdmodeling 0.0.1
 math
 matplotlib
 rpy2==2.9.4 
