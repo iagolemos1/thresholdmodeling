@@ -1,0 +1,7 @@
+scipy
+numpy 
+pandas 
+thresholdmodeling
+math
+matplotlib
+rpy2==2.9.4 
