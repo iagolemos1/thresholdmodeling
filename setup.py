@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/iagolemos1/thresholdmodeling",
-    packages=['thresholdmodeling', 'tests'],
+    packages=['thresholdmodeling'],
     test_suit = 'tests',
     classifiers=[
         "Programming Language :: Python :: 3",
