@@ -1,6 +1,13 @@
 import unittest
 import numpy as np
 import matplotlib.pyplot as plt
+from rpy2.robjects.packages import importr
+import rpy2.robjects.packages as rpackages
+
+base = importr('base')
+utils = importr('utils')
+utils.chooseCRANmirror(ind=1)
+utils.install_packages('POT') #installing POT package
 
 def decluster(sample, threshold, block_size): #function to decluster the dataset toward period blocks 
     period_unit = np.arange(1, len(sample)+1, 1) #period array
