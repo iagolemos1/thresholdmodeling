@@ -27,4 +27,4 @@ install:
   - python setup.py install
   
 script:
-  - python -m unittest discover
+  - unittest
