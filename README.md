@@ -201,7 +201,7 @@ Hence, by the graphic, it is possible to say that the theoretical model is very 
 Also, it was possible to compute the return value in 100 years. In other words, the rainfall preciptation once in every 100 years must be between 65.4470 and 147.2108 mm.
 
 ## Declustering
-Stuart Coles's in his [book](https://www.springer.com/gp/book/9781852334598) says that if the extremes assume a tendency to be clustered in a stationary series, another pratice would be need to model these values. The pratice consists in declustering, which is: cluster data and decluster by its maximuns. For this example, it is clear that, at least initialy, the dataset is not orgnanized in clusters. With the function ``decluster`` it is possible to observe the dataset plot against its unit of return period, but, also it is possible to cluster it using a given block size (in this example it will be monthly, then the block size will be 30 days), and then decluster it by taking the maximum of each block. 
+Stuart Coles's in his [book](https://www.springer.com/gp/book/9781852334598) says that if the extremes assume a tendency to be clustered in a stationary series, another pratice would be need to model these values. The pratice consists in declustering, which is: cluster data and decluster by its maximums. For this example, it is clear that, at least initialy, the dataset is not orgnanized in clusters. With the function ``decluster`` it is possible to observe the dataset plot against its unit of return period, but, also it is possible to cluster it using a given block size (in this example it will be monthly, then the block size will be 30 days), and then decluster it by taking the maximum of each block. 
 
 By running these lines:
 ```python
