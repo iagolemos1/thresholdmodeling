@@ -39,6 +39,13 @@ import scipy.special as sm
 #Getting main packages from R in order to apply the maximum likelihood function
 from rpy2.robjects.packages import importr
 from rpy2.robjects.vectors import FloatVector
+from rpy2.robjects.packages import importr
+import rpy2.robjects.packages as rpackages
+
+base = importr('base')
+utils = importr('utils')
+utils.chooseCRANmirror(ind=1)
+utils.install_packages('POT') #installing POT package
 
 POT = importr('POT') #importing POT package
 
