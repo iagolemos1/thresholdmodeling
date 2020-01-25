@@ -26,6 +26,5 @@ install:
   - conda install -c r rpy2=2.9.4
   - python setup.py install
   
- script:
-  -python setup.py test
-  
+script:
+  - python -m unittest discover
