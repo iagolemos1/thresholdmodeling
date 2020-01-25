@@ -27,4 +27,4 @@ install:
   - python setup.py install
   
 script:
-  - unittest
+  - python tests
