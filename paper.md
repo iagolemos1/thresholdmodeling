@@ -36,11 +36,11 @@ bibliography: paper.bib
 
 Extreme value analysis has emerged as one of the most important disciplines
 for the applied sciences when dealing with reduced datasets and when the main idea is to
-extrapolate the observations over a given time. By using a threshold model with an asymptotic characterization, it is posible to work with the Generalized Pareto Distribution (GPD) [@coles] and use it to model the stochastic behavior of a process at an unusual level, which can be of maximum or minimum. For example, suppose that it is available a large dataset of wind velocity in Florida, USA, during a certain period of time. It is possible to model this process and to quantify extreme events' probability, like hurricanes, which are maximum observations of wind velocity, in a time of interest using the return value tool. 
+extrapolate the observations over a given time. By using a threshold model with an asymptotic characterization, it is posible to work with the Generalized Pareto Distribution (GPD) [@coles] and use it to model the stochastic behavior of a process at an unusual level, either a maximum or minimum. For example, consider a large dataset of wind velocity in Florida, USA, during a certain period of time. It is possible to model this process and to quantify extreme events' probability, like hurricanes, which are maximum observations of wind velocity, in a time of interest using the return value tool. 
 
 In this context, this package provides a complete toolkit to conduct a threshold model analysis, from the beginning phase of selecting the threshold, going through the model fit, model checking and return value analysis. Moreover, statistical moments functions are provided. In case of extremes of dependent sequences it is also possible to conduct a declustering analysis.   
 
-In a software context, it is possible to see a strong community working with ``R`` packages like ``POT`` [@POT],``evd`` [@evd] and ``extRemes`` [@extremes], that are used for a complete extreme value modeling. 
+In a software context, it is possible to see a strong community working with ``R`` packages like ``POT`` [@POT],``evd`` [@evd] and ``extRemes`` [@extremes], that are used for complete extreme value modeling. 
 Otherwise, in ``Python``, it is possible to find the ``scikit-extremes`` [@kiko], which does not contain the threshold models yet. In addition, another package is ``scipy``, with the ``genpareto`` [@scipy] functions, which also does not provide any Peak-Over-Threshold modeling functions since it is not possible to define a threshold using this package. Moreover, this package brings to the community of scientists, engineers, and any other interested person and programmer, the possibility to conduct an extreme value analysis, using a strong, consolidated and high-level programming language, given the importance of the extreme value theory approach for statistical analysis in corrosion engineering [see @scarf; and @tan], hydrology [see @katz], enviromental data analysis [see @max; and @esther] and many other fields of natural sciences and engineering [for a massive number of other applications see @coles p. 1] 
 
 Hence, the ``thresholdmodeling`` package presents numerous functions to model the stochastic behavior of an extreme process. For a complete introduction of the complete fifteen package functions it is crucial to go to the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md), on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling). 
@@ -73,13 +73,13 @@ It is also possible to compute sample L-Moments, model L-Moments, non-central mo
 
 ## Installation 
 
-For installation instructions, go to [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md).
+For installation instructions, see the [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md) on the GitHub page.
 
 # Reproducibility and User's Guide
 
-In the repository on [GitHub page](https://github.com/iagolemos1/thresholdmodeling) is possible
+In the repository on the [GitHub page](https://github.com/iagolemos1/thresholdmodeling) it is possible
 to get the dataset: Daily Rainfall in the South-West of England from 1914 to 1962. 
-Using it is a way of testing the software in order to verify its results and compare it with the forseen ones in @coles. For a more detailed tutorial of the using of each function, go to the [Test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) folder.
+Using it is a way of testing the software in order to verify its results and compare it with the forseen ones in @coles. For a more detailed tutorial of the using of each function, go to the [Test](https://github.com/iagolemos1/thresholdmodeling/blob/master/Test/test.py) directory.
 
 A minimal simple example on how to use the software and get some of the results presented by @coles is given below. For information about the functions employed see the [Functions Documentation](https://github.com/iagolemos1/thresholdmodeling/blob/master/Functions%20Documentation.md) and for more detailes of reproducibility see the [README](https://github.com/iagolemos1/thresholdmodeling/blob/master/README.md).
 
