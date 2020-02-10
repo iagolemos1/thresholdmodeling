@@ -1,5 +1,5 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3661338.svg)](https://doi.org/10.5281/zenodo.3661338)
-
+[![DOI](https://joss.theoj.org/papers/10.21105/joss.02013/status.svg)](https://doi.org/10.21105/joss.02013)
 
 # ```thresholdmodeling```: A Python package for modeling excesses over a threshold using the Peak-Over-Threshold Method and the Generalized Pareto Distribution
 
