@@ -1,0 +1,40 @@
+{
+    "description": "<ul>\n<li><p>This package is intended for those who wish to conduct an extreme values analysis. It provides the whole toolkit necessary to create a threshold model in a simple and efficient way, presenting the main methods towards the Peak-Over-Threshold method and the fit in the Generalized Pareto Distribution.</p>\n</li>\n<li><p>For more informations like installations, user guide, package documentations and more, see the <a href=\"https://github.com/iagolemos1/thresholdmodeling\">GitHub Page</a>.</p>\n</li>\n</ul>", 
+    "license": "other-open", 
+    "title": "iagolemos1/thresholdmodeling: thresholdmodeling: A Python package for modeling excesses over a threshold using the Peak-Over-Threshold Method and the Generalized Pareto Distribution", 
+    "version": "0.0.1", 
+    "upload_type": "software", 
+    "publication_date": "2020-02-10", 
+    "creators": [
+  
+        {
+            "affiliation": "Acoustics and Vibration Laboratory, Federal University of Uberl\u00e2ndia", 
+            "name": "Iago Pereira Lemos"
+            "ORCID": "0000-0002-5829-7711"
+        }, 
+        {
+            "affiliation": "Acoustics and Vibration Laboratory, Federal University of Uberl\u00e2ndia", 
+            "name": "Marcus Antonio Viana Duarte"
+            "ORCID": "0000-0002-8166-5666"
+        },
+        {
+            "affiliation": "School of Mechanical Engineering, Federal University of Uberl\u00e2ndia", 
+            "name": "Antonio Marcos Gonçalves de Lima"
+            "ORCID": "0000-0003-0170-6083"
+        }
+
+    ], 
+    "access_right": "open", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/iagolemos1/thresholdmodeling/tree/0.0.1", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.3661337", 
+            "relation": "isVersionOf"
+        }
+    ]
+}
