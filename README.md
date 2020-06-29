@@ -245,6 +245,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 
 # Referencing
 For referencing the repository, use the following code:
+```
 @misc{thresholdmodeling,
     author    = {Iago P. Lemos and Antonio Marcos G. Lima and Marcus Antonio Viana Duarte},
     title     = {thresholdmodeling package},
@@ -255,6 +256,7 @@ For referencing the repository, use the following code:
     publisher = {Zenodo},
     url       = {https://github.com/iagolemos1/thresholdmodeling}
     }
+ ```
 # Background
 I am a mechanical engineering undergraduate student in the Federal University of Uberlândia and this package was made in the Acoustics and Vibration Laboratory, in the School of Mechanical Engineering.
 
