@@ -91,7 +91,8 @@ def MRL(sample, alpha): #MRL function
 def Parameter_Stability_plot(sample, alpha): #Parameter stability plot function
     #Defining Threshold array
     step = np.quantile(sample, .995)/45
-    threshold = np.arange(0, np.quantile(sample, .999), step = step)
+    threshold = np.arange(
+	0, np.quantile(sample, .999), step = step, dtype='float32')
 
     #Transforming sample in a R array
     rdata = FloatVector(sample)
@@ -107,7 +108,7 @@ def Parameter_Stability_plot(sample, alpha): #Parameter stability plot function
 
     #Getting parameters and CI's for both plots
     for u in threshold:
-        fit = POT.fitgpd(rdata, u, est = 'mle')  #fitting distribution using POT package with the MLE method 
+        fit = POT.fitgpd(rdata, u.item(), est = 'mle')  #fitting distribution using POT package with the MLE method 
         shape.append(fit[0][1]) #adding the shape parameter to the respective array
         scale.append(fit[0][0]) #adding the scale parameter to the respective array
         stdshape.append(fit[1][1]) #adding the shape standard deviation to the respective array
