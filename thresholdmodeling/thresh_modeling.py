@@ -108,7 +108,7 @@ def Parameter_Stability_plot(sample, alpha): #Parameter stability plot function
 
     #Getting parameters and CI's for both plots
     for u in threshold:
-        fit = POT.fitgpd(rdata, u, est = 'mle')  #fitting distribution using POT package with the MLE method 
+        fit = POT.fitgpd(rdata, u.item(), est = 'mle')  #fitting distribution using POT package with the MLE method 
         shape.append(fit[0][1]) #adding the shape parameter to the respective array
         scale.append(fit[0][0]) #adding the scale parameter to the respective array
         stdshape.append(fit[1][1]) #adding the shape standard deviation to the respective array
