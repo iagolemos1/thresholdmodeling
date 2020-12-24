@@ -91,7 +91,8 @@ def MRL(sample, alpha): #MRL function
 def Parameter_Stability_plot(sample, alpha): #Parameter stability plot function
     #Defining Threshold array
     step = np.quantile(sample, .995)/45
-    threshold = np.arange(0, np.quantile(sample, .999), step = step)
+    threshold = np.arange(
+	0, np.quantile(sample, .999), step = step, dtype='float32')
 
     #Transforming sample in a R array
     rdata = FloatVector(sample)
